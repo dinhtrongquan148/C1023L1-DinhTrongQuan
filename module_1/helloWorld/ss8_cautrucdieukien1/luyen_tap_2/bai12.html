@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi suất ngân hàng</title>
+</head>
+<body>
+Số tiền bạn gửi tiết kiệm: <label><input type="number" id="p"></label><br>
+Lãi suất mỗi tháng năm 2023 là 7%.<br>
+Số lần tiền lãu được nhận mỗi tháng là: <label><input type="number" id="n">Lần </label><br>
+Thời gian gửi tiền (tháng): <label><input type="number" id="t"></label><br>
+<button onclick="submit()">Kết quả</button><br>
+<p id="123"></p>
+<script>
+  function submit(){
+    let p = +document.getElementById('p').value;
+    let n = +document.getElementById('n').value;
+    let t = +document.getElementById('t').value;
+    let s = ((1+0.07/n)^(n*t))*p;
+    document.getElementById('123').innerHTML='Số tiền bạn nhận được bao gồm gốc và lãi là '+s+'Đồng.'
+  }
+</script>
+</body>
+</html>

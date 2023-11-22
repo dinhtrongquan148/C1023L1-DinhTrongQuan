@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điêu kiện học lớp 10</title>
+</head>
+<body>
+Nhập số tuổi của bạn:
+<label><input id="age" min="1" type="number" placeholder=""></label><br>
+<button onclick="submit()">Kết quả</button><br>
+<p id="ketqua"></p>
+<script>
+    function submit(){
+        let a = +document.getElementById('age').value;
+        if (a<=15){
+            document.getElementById('ketqua').innerText='Bạn không đủ điều kiện vaào lớp 10';
+        }else document.getElementById('ketqua').innerText='Bạn đủ điều kiện vào lớp 10';
+    }
+</script>
+</body>
+</html>

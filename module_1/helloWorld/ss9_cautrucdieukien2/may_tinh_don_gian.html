@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+    <style>
+        th {
+            width: 100px;
+            height: 100px;
+        }
+        td{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<table border="4">
+    <tr>
+        <td colspan="4" >
+            <p id="submit" style="width: 400px;height: 90px"></p>
+        </td>
+    </tr>
+    <tr>
+        <th><button onclick="cal(1)" type="button" style="height: 90px;width: 90px">1</button></th>
+        <th><button onclick="cal(2)" type="button" style="height: 90px;width: 90px">2</button></th>
+        <th><button onclick="cal(3)" type="button" style="height: 90px;width: 90px">3</button></th>
+        <th><button onclick="cal('+')" type="button" style="height: 90px;width: 90px">+</button></th>
+    </tr>
+    <tr>
+        <th><button onclick="cal(4)" type="button" style="height: 90px;width: 90px">4</button></th>
+        <th><button onclick="cal(5)" type="button" style="height: 90px;width: 90px">5</button></th>
+        <th><button onclick="cal(6)" type="button" style="height: 90px;width: 90px">6</button></th>
+        <th><button onclick="cal('-')" type="button" style="height: 90px;width: 90px">-</button></th>
+    </tr>
+    <tr>
+        <th><button onclick="cal(7)" type="button" style="height: 90px;width: 90px">7</button></th>
+        <th><button onclick="cal(8)" type="button" style="height: 90px;width: 90px">8</button></th>
+        <th><button onclick="cal(9)" type="button" style="height: 90px;width: 90px">9</button></th>
+        <th><button onclick="cal('*')" type="button" style="height: 90px;width: 90px">X</button></th>
+    </tr>
+    <tr>
+        <th><button type="reset" style="height: 90px;width: 90px"><strong>C</strong></button></th>
+        <th><button onclick="cal(0)" type="button" style="height: 90px;width: 90px">0</button></th>
+        <th><button onclick="bang()" type="button" style="height: 90px;width: 90px">=</button></th>
+        <th><button onclick="cal('/')" type="button" style="height: 90px;width: 90px">/</button></th>
+    </tr>
+</table>
+<script>
+    function cal(){
+        var a= +document.getElementById('submit').innerHTML
+        var a += +document.getElementById('submit').innerHTML
+    }
+</script>
+</body>
+</html>

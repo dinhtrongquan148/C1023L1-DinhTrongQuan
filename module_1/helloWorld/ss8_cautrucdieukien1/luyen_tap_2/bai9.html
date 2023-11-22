@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 3 số có phải cạnh hình tam giác?</title>
+</head>
+<body>
+Nhập cạnh a: <label><input id="a" type="number"></label><br>
+Nhập cạnh b: <label><input id="b" type="number"></label><br>
+Nhập cạnh c: <label><input id="c" type="number"></label><br>
+<button onclick="xyz()">Kiểm tra</button> <p id="123"></p>
+<script>
+    function xyz(){
+        let a =+ document.getElementById('a').value;
+        let b =+document.getElementById('b').value;
+        let c=+document.getElementById('c').value;
+if (a>0&&b>0&&c>0){
+    if ((a+b)>c){
+        document.getElementById('123').innerText='Ba số nhập vào là cạnh của một hình tam giác.';
+    }else document.getElementById('123').innerText='Ba số nhập vào không phải là cạnh của một hình tam giác.';
+}else document.getElementById('123').innerText='Ba số nhập vào không phải là cạnh của một hình tam giác.';
+    }
+</script>
+</body>
+</html>

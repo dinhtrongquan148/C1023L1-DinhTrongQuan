@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá bán lẻ điện cho sinh hoạt</title>
+</head>
+<body>
+Nhập số công tơ điện của bạn: <label><input type="number" min="0" id="giadien"></label><br>
+<button type="submit" onclick="xyz()">Xác nhận</button>
+<br><p id="123"></p>
+<script>
+    function xyz(){
+        let a = +document.getElementById('giadien').value;
+        if (a<=50){
+            document.getElementById('123').innerHTML='Giá điện của bạn là: '+ a*1806 +' Đồng.';
+        }else if (a<=100){
+            document.getElementById('123').innerHTML='Giá điện của bạn là: '+ a*1866 +' Đồng.';
+        }else  if (a<=200){
+            document.getElementById('123').innerHTML='Giá điện của bạn là: '+ a*2167 +' Đồng.';
+        }else if (a<=300){
+            document.getElementById('123').innerHTML='Giá điện của bạn là: '+ a*2792 +' Đồng.';
+        }else if (a<= 400){
+            document.getElementById('123').innerHTML='Giá điện của bạn là: '+ a*3050 +' Đồng.';
+        }else document.getElementById('123').innerHTML='Giá điện của bạn là: '+ a*3151 +' Đồng.';
+    }
+</script>
+</body>
+</html>

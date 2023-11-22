@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số của bạn: <label><input type="number" id="number"></label><br>
+<button onclick="abc()" type="button">Kết quả</button><br>
+<p id="xyz"></p>
+<script>
+    function abc(){
+        let a=+document.getElementById('number').value;
+        if (a<0){
+            document.getElementById('xyz').innerText='Số vừa nhập bé hơn 0';
+        }else if (a===0){
+            document.getElementById('xyz').innerText='Số vừa nhập bằng 0';
+        }else document.getElementById('xyz').innerText='Số vừa nhập lớn hơn 0';
+    }
+</script>
+</body>
+</html>

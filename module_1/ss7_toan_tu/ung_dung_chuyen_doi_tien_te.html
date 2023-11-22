@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>
+            <label for="sotien">Amount</label>
+
+        </th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td><input type="number" name="cost" value="1" id="sotien"></td>
+        <td>
+            <select id="from" >
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+            </select>
+        </td>
+        <td>
+            <button id="submit">Submit</button>
+        </td>
+    </tr>
+</table><br>
+<p id="ketqua"></p>
+<script>
+
+        let a = document.getElementById('sotien');
+        let from =document.getElementById('from');
+        let to = document.getElementById('to');
+        let submit = document.getElementById('submit')
+        let ketqua = document.getElementById('ketqua')
+        let fromInput = from.value
+        let toInput = to.value
+        document.getElementById('from').addEventListener('change',function (){
+            fromInput = from.value
+        })
+        document.getElementById('to').addEventListener('change',function (){
+            toInput = to.value
+        })
+        submit.addEventListener('click',function (){
+            if(fromInput === 'VND' && toInput ==='USD'){
+                ketqua.innerText = 'So tien : ' + +a.value/23000 + 'USD';
+            }
+            if(fromInput === 'USD' && toInput === 'VND'){
+                ketqua.innerText = 'Số tiền : ' + +a.value *23000 +'VND';
+            }
+            if ((fromInput ==='VND' && toInput ==='VND')||(fromInput ==='USD' && toInput==='USD'))
+                ketqua.innerText = 'Số tiền: giữ nguyên'
+        })
+
+
+
+</script>
+</body>
+</html>

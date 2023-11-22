@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h1>CalCulator</h1>
+<label><input type="number" placeholder="number1" id="txtNum1"></label>
+<label><input type="number" placeholder="number2" id="txtNum2"></label>
+<button type="button" onclick="add()">Cộng (+)</button>
+<button type="button" onclick="sub()">Trừ (-)</button>
+<button type="button" onclick="mul()">Nhân (x)</button>
+<button type="button" onclick="div()">Chia (/)</button>
+<p id="ketqua">Kết quả</p>
+<script>
+    function add() {
+        let num1 = +document.getElementById("txtNum1").value;
+        let num2 = +document.getElementById("txtNum2").value;
+        sum = num1 + num2;
+        document.getElementById("ketqua").innerHTML="Result: " +sum;
+    }
+
+    function sub(){
+        let num1 = +document.getElementById("txtNum1").value;
+        let num2 = +document.getElementById("txtNum2").value;
+        tru = num1-num2;
+        document.getElementById("ketqua").innerHTML="Result: " +tru;
+    }
+    function mul(){
+        let num1 = +document.getElementById("txtNum1").value;
+        let num2 = +document.getElementById("txtNum2").value;
+        nhan = num1 * num2;
+        document.getElementById("ketqua").innerHTML="Result: "+nhan;
+    }
+    function div(){
+        let num1 = +document.getElementById("txtNum1").value;
+        let num2 = +document.getElementById("txtNum2").value;
+        if (num2 === 0)
+            document.getElementById("ketqua").innerText = "Không có giá trị";
+        else
+            chia = num1 / num2;
+        document.getElementById('ketqua').innerHTML ="Result" + chia;
+    }
+</script>
+</body>
+</html>

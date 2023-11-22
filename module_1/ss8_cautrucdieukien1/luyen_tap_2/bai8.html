@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra độ tuổi</title>
+</head>
+<body>
+Nhập vào số tuổi của bạn: <label><input type="number" id="a"></label><br>
+<button onclick="xyz()"></button> <p id="123"></p>
+<script>
+    function xyz(){
+        let a=+document.getElementById('a').value;
+        if (a>0 && a<=120){
+            document.getElementById('123').innerText='Bạn đúng là người!'
+        }else document.getElementById('123').innerText='Bạn không phải là người!'
+    }
+</script>
+</body>
+</html>

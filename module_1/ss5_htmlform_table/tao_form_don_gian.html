@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Form đơn giản</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>
+            <strong>SỞ THÍCH CỦA BẠN</strong>
+        </legend>
+        <br>
+        Họ và tên:
+        <label>
+            <input type="text">
+        </label><br>
+        Email:
+        <label for="unname"></label>
+        <input type="text" id="unname" name="unname"><br>
+        Sở thích:
+
+        <label><input name="hobby" value="sport" type="checkbox">Thể thao</label>
+        <label><input name="hobby" value="music" type="checkbox">Âm nhạc</label>
+        <label><input name="hobby" value="reading book" type="checkbox">Đọc sách</label><br>
+        <label><input name="hobby" value="surf the web" type="checkbox">Lướt Web</label>
+        <label><input name="hobby" value="play game" type="checkbox">Chơi game</label>
+        <label><input name="hobby" value="film" type="checkbox">Điện ảnh</label>
+        <label><input name="hobby" value="tourism" type="checkbox">Du lịch</label>
+        <br><input type="submit" value="Gửi thông tin"> <input type="reset" value="Nhập lại">
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend>ĐĂNG KÝ HỌC VIÊN</legend>
+        Họ và tên: <label><input type="text"></label><br>
+        Ngày sinh: <label><input type="date"></label><br>
+        Giới tính: <label><input name="sex" value="male" type="radio">Nam</label>
+        <label><input name="sex" value="female" type="radio">Nữ</label><br>
+        Địa chỉ: <label><textarea cols="50" rows="5"></textarea></label><br>
+        <label for="class">Lớp:</label>
+        <select id="class" name="class">
+            <option value="">Chọn lớp</option>
+            <option value="21SH1">21SH1</option>
+            <option value="21SH2">21SH2</option>
+        </select><br>
+        Email: <label><input type="text"></label><br>
+        Điện thoại: <label><input type="text"></label><br>
+        <label><input type="submit" value="Đăng ký"></label>
+        <label><input type="reset" value="Nhập lại"></label>
+    </fieldset>
+</form>
+</body>
+</html>

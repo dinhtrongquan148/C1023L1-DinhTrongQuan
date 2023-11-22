@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoa hồng</title>
+</head>
+<body>
+<strong>Doanh số bán hàng và hoa hồng năm 2023</strong><br>
+Doanh số: <label><input id="doanhso" type="number" min="0"></label><br>
+<button onclick="xyz()" type="button">Kiểm tra hoa hồng</button>
+<script>
+    function xyz(){
+        let a = + document.getElementById('doanhso').value;
+        console.log(a);
+        if (a<=500){
+            document.getElementById('xyz').innerText='Hoa hồng 5%';
+        }else if (a<=2000){
+            document.getElementById('xyz').innerText='Hoa hồng 10%';
+        }else if (a<=5000){
+            document.getElementById('xyz').innerText='Hoa hồng 15%';
+            }else document.getElementById('xyz').innerText='Hoa hồng 25%';
+        }
+
+</script>
+</body>
+</html>
