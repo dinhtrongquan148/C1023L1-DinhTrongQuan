@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 30 số tự nhiên đâ tiên chia hết cho 7</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let count = 1;
+    let sum=0;
+    while (a<=30){
+        if (count % 7===0){
+            a++;
+            sum +=count;
+            count++
+        }else count++;
+    }
+    document.write(sum);
+</script>
+</body>
+</html>
